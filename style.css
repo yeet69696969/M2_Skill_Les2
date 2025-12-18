@@ -1,39 +1,139 @@
+/* Algemene stijl */
+/* -------- Algemeen -------- */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Inter", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
+    background: #f2f4f7;
+    color: #333;
 }
 
+/* Header */
 header {
-    background-color: #333;
+    background: linear-gradient(135deg, #2c3e50, #4a6572);
     color: white;
-    padding: 20px;
+    padding: 30px 20px;
     text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
 nav a {
-    color: white;
-    margin: 0 15px;
+    color: #f0f0f0;
+    margin: 0 20px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
+nav a:hover {
+    color: #ffd369;
+    text-decoration: underline;
+}
+
+/* Main */
 main {
-    padding: 20px;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 30px;
-}
-
+/* Content sections */
 section {
     background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: 0.25s;
+    background: linear-gradient(135deg, #eef1f6, #dfe4ea);
+    color: #333;
+}
+
+/* -------- Header -------- */
+header {
+    background: #1e1e2f;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+}
+
+/* -------- Navigatie -------- */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #cfd3f4;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: color 0.2s, transform 0.2s;
+}
+
+nav a:hover {
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* -------- Main content -------- */
+main {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* -------- Team cards / Sections -------- */
+section {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 14px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+section:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #264bcf;
+    font-size: 1.6rem;
+}
+
+/* -------- Footer -------- */
+footer {
+    background-color: #1e1e2f;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 50px;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+}
+
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #ddd;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
 }
